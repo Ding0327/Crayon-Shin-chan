@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>卡片式排版練習</title>
+  
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @charset "UTF-8";
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #142F56;
+  justify-content: center;
+  align-items: center;
+  font: 14px;
+  font-weight: 700;
+}
+
+.up {
+  font-size: 50px;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: inline-block;
+  padding: 0px;
+  margin: 10px;
+  width: 140px;
+  height: 150px;
+  max-width: 300px;
+  background-color: #FBBE00;
+  border-radius: 4%;
+  box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+.box:hover {
+  transform: translate(-5px, -10px);
+  width: 300px;
+  height: 300px;
+}
+.box .top {
+  padding: 0;
+  margin: 0px;
+  background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Crayon_Shin-chan.png);
+  background-position: center;
+  background-size: contain;
+  height: 170px;
+  position: relative;
+}
+.box .top .name {
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  padding: 0px 10px;
+  letter-spacing: 2px;
+  color: white;
+  font: 24px;
+  background: linear-gradient(transparent 0%, black 100%);
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.bottom {
+  text-align: left;
+  height: 10px;
+  display: flex;
+  top: -25px;
+  padding: 10px;
+  margin: 10px;
+}
+.bottom li {
+  padding: 2px 0px;
+}
+.bottom h3 {
+  margin: 0px auto;
+  padding: 0px;
+  display: inline-block;
+}
+.bottom ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box2 .top {
+  background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Rro.png);
+}
+
+.box3 .top {
+  background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Even%20seeing.png);
+}
+
+.box4 .top {
+  background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Hiroshi.png);
+}
+
+.box5 .top {
+  background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Sunflower.png);
+}
+
+.down {
+  margin: 0;
+  height: 60px;
+  top: 50%;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(transparent 0%, black 100%);
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  
+<html>
+  <title></title>
+  <body>
+    <h1 class="up">蠟筆小新</h1>
+    <div class="container">
+      <div class="box box1">
+        <div class="top">
+          <h2 class="name">蠟筆小新</h2>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li>
+              <h3>生日:</h3>5月5日
+            </li>
+            <li>
+              <h3>血型</h3>B型
+            </li>
+            <li>雙葉幼稚園向日葵班學童。春日部防衛隊創始人兼春日部防衛隊隊員</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box box2">
+        <div class="top">
+          <h2 class="name">小白</h2>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li>野原家飼養的小狗。</li>
+            <li>春日部防衛隊警犬</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box box3">
+        <div class="top">
+          <h2 class="name">野原美冴</h2>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li>
+              <h3>生日:</h3>9月21日
+            </li>
+            <li>
+              <h3>血型</h3>B型
+            </li>
+            <li>小新的母親。全職的家庭主婦。富有責任感及正義感</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box box4">
+        <div class="top">
+          <h2 class="name">野原廣志</h2>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li>小新的父親,35歲</li>
+            <li>雙葉商事東京本部的第一營業部股長</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box box5">
+        <div class="top">
+          <h2 class="name">野原葵</h2>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li> 
+              <h3>生日:</h3>9月27日
+            </li>
+            <li>小新的妹妹，0歲</li>
+            <li>對帥哥和亮晶晶的東西非常感興趣</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h2 class="down">made by @ding</h2>
+  </body>
+</html>
+  
+  
+
+</body>
+
+</html>

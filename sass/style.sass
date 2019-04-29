@@ -1,0 +1,109 @@
+$color_blue: #142F56
+$color_yellow: #FBBE00
+*
+  position: relative
+  // border: 2px solid black
+  font-family: 微軟正黑體
+  box-sizing: border-box
+  transition: .5s
+@mixin size($w,$h)
+  width: $w
+  height: $h
+html,body
+  +size(100%,100%)
+  margin: 0
+  padding: 0
+  background-color: $color_blue
+  // display: flex
+  justify-content: center
+  align-items: center
+  font: 14px
+  font-weight: 700
+  // overflow: hidden
+.up
+  font-size: 50px
+  color: white
+  position: relative
+  text-align: center
+.container
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  align-items: center
+.box
+  display: inline-block
+  padding: 0px
+  margin: 10px
+  width: 140px
+  height: 150px
+  max-width: 300px
+  background-color: $color_yellow
+  border-radius: 4%
+  box-shadow: 10px 5px 30px rgba(0,0,0,.6)
+  cursor: pointer
+  overflow: hidden
+  text-align: center
+  &:hover
+    transform: translate(-5px, -10px)
+    width: 300px
+    height: 300px
+  & .top
+    padding: 0
+    margin: 0px
+    background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Crayon_Shin-chan.png)
+    background-position: center
+    background-size: contain
+    height: 170px
+    position: relative
+    & .name
+      position: absolute
+      left: 0px 
+      bottom: -10px
+      padding: 0px 10px
+      letter-spacing: 2px
+      color: white
+      font: 24px 
+      background: linear-gradient(transparent 0%, black 100%)
+      width: 100%
+      padding-top: 0px
+      padding-bottom: 10px
+
+  
+.bottom
+  text-align: left
+  height: 10px
+  display: flex
+  top: -25px
+  padding: 10px
+  margin: 10px
+  & li
+    padding: 2px 0px
+  & h3
+    margin: 0px auto
+    padding: 0px
+    display: inline-block
+  & ul
+    list-style: none
+    padding: 0
+.box2
+  & .top
+    background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Rro.png)
+.box3
+  & .top
+    background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Even%20seeing.png)
+.box4
+  & .top
+    background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Hiroshi.png)
+.box5
+  & .top
+    background-image: url(https://ding0327.github.io/Crayon-Shin-chan/Sunflower.png)
+
+.down
+  margin: 0
+  height: 60px
+  top: 50%
+  font-size: 20px
+  color: white
+  position: relative
+  text-align: center
+  background: linear-gradient(transparent 0%, black 100%)
